@@ -1,0 +1,40 @@
+{
+  "dependencies": {
+    "daf-core": "^7.0.0-beta.41",
+    "daf-did-comm": "^7.0.0-beta.41",
+    "daf-did-jwt": "^7.0.0-beta.41",
+    "daf-ethr-did": "^7.0.0-beta.41",
+    "daf-express": "^7.0.0-beta.1",
+    "daf-identity-manager": "^7.0.0-beta.41",
+    "daf-key-manager": "^7.0.0-beta.41",
+    "daf-libsodium": "^7.0.0-beta.41",
+    "daf-message-handler": "^7.0.0-beta.41",
+    "daf-resolver": "^7.0.0-beta.41",
+    "daf-rest": "^7.0.0-beta.41",
+    "daf-selective-disclosure": "^7.0.0-beta.41",
+    "daf-typeorm": "^7.0.0-beta.41",
+    "daf-w3c": "^7.0.0-beta.41",
+    "daf-web-did": "^7.0.0-beta.41",
+    "express": "^4.17.1",
+    "typescript": "^4.0.3"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "daf7-remote-agent",
+  "description": "",
+  "version": "1.0.0",
+  "main": "agent.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sabhi-org/daf7-remote-agent.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sabhi-org/daf7-remote-agent/issues"
+  },
+  "homepage": "https://github.com/Sabhi-org/daf7-remote-agent#readme"
+}
