@@ -66,7 +66,8 @@ const { AgentRestClient } = require('daf-rest');
 // });
 
 const supportedMethods = [
-  'identityManagerImportIdentity'
+  'identityManagerImportIdentity',
+  'identityManagerCreateIdentity',
 ];
 
 const agent = createAgent({

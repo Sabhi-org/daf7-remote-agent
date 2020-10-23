@@ -11,9 +11,9 @@ const agentRouter = AgentRouter({
     exposedMethods: agent.availableMethods(),
 });
 
-// app.use(basePath, agentRouter);
+app.use(basePath, agentRouter);
 
-app.post(`${basePath}/did`, agentRouter, async (req, res) => {
+app.post(`${basePath}/did`, async (req, res) => {
     try {
         const did = req.body.did;
         console.log(did);
@@ -22,9 +22,9 @@ app.post(`${basePath}/did`, agentRouter, async (req, res) => {
         res.json({ identity: importIdentity });
     } catch (error) {
         console.log(error);
-        res.json({ error: error.message })
+        res.json({ error: error.message });
     }
-})
+});
 
 app.listen(3002, () => {
     console.log('app is live on port 3002');
