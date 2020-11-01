@@ -26,7 +26,7 @@ const { AgentRestClient } = require('daf-rest');
 //   entities: Entities,
 // })
 
-// const serverAgent = new Agent({
+// const agent = createAgent({
 //   plugins: [
 //     new KeyManager({
 //       store: new KeyStore(dbConnection, new SecretBox(secretKey)),
@@ -73,7 +73,7 @@ const supportedMethods = [
 const agent = createAgent({
   plugins: [
     new AgentRestClient({
-      url: 'http://localhost:3002/agent',
+      url: 'http://localhost:3001/agent',
       enabledMethods: supportedMethods
     })
   ]

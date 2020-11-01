@@ -12,6 +12,8 @@ const agentRouter = AgentRouter({
 });
 
 app.use(basePath, agentRouter);
+app.use(cors());
+app.use(bodyParser.json());
 
 app.post(`${basePath}/did`, async (req, res) => {
     try {
@@ -26,6 +28,8 @@ app.post(`${basePath}/did`, async (req, res) => {
     }
 });
 
-app.listen(3002, () => {
-    console.log('app is live on port 3002');
+const port = 3001;
+
+app.listen(port, () => {
+    console.log(`app is live on port ${port}`);
 });
